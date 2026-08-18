@@ -90,6 +90,13 @@ error rather than corrupting data.
 
 ---
 
+## References
+
+- **Microsoft Form (design view):** https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=lWO9y-HouEez3XevwjPMVTjC9G2MWc9PrE4RzL3MpFtUMFJCQ0VDTVFOUVM2S0JVRDJETEtJTlMzOS4u&Token=e09d0e3bed304ae8b528820ef831370f
+- **Excel workbook (SharePoint):** https://power2grow-my.sharepoint.com/:x:/r/personal/jiayao_loh_sarawakenergy_com/Documents/Wayleave_Application_Tracker.xlsx?d=wf234b2bd76b14fe894279d92e0b38614&csf=1&web=1&e=iGgPsx
+
+---
+
 ## Known limitations
 
 - Engineer name matching is case-insensitive and trims surrounding whitespace,
