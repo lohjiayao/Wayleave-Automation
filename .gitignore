@@ -1,0 +1,15 @@
+# The workbook contains staff email addresses and internal SharePoint links.
+# Commit the structure documentation instead — see docs/WORKBOOK_STRUCTURE.md
+*.xlsx
+*.xlsm
+*.csv
+
+# Exported flow definitions may embed connection IDs and tenant references
+*.zip
+flow-export/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
