@@ -1,3 +1,9 @@
+## ▶️ [WATCH THE DEMO VIDEO](https://youtu.be/rpPtETyhqXs)
+
+[![Watch the demo](https://img.youtube.com/vi/rpPtETyhqXs/maxresdefault.jpg)](https://youtu.be/rpPtETyhqXs)
+
+---
+
 # Wayleave Application Tracker
 
 Automation for logging wayleave applications submitted through Microsoft Forms
