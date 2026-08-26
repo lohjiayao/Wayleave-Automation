@@ -1,0 +1,59 @@
+<!--
+  Notification email body for "Send an email (V2)".
+
+  Paste into the Body field via the code-view (</>) button, then leave code view
+  and replace each PLACEHOLDER with the matching Run script output:
+
+    PROJECT_REF_HERE     -> outProjectRef
+    PROJECT_TITLE_HERE   -> outProjectTitle
+    WAYLEAVE_TYPE_HERE   -> outWayleaveType
+    DISTRICT_HERE        -> outDistrict
+    AGENCY_HERE          -> outAgency
+    JKR_HERE             -> outJkrRequired
+    APPROVAL_REF_HERE    -> outApprovalRef   (blank on Application submissions)
+    DOC_HERE             -> documentLink
+
+  Use the Run script outputs rather than the raw form fields — the form fields
+  are blank on Approval submissions and the upload fields contain raw JSON.
+-->
+
+<p>Hi,</p>
+<p>A wayleave submission requires your attention. Details below:</p>
+
+<table style="border-collapse: collapse; width: 100%; max-width: 600px;">
+  <tr style="background-color: #f2f2f2;">
+    <td style="border: 1px solid #ccc; padding: 8px; font-weight: bold;">Project Ref</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">PROJECT_REF_HERE</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px; font-weight: bold;">Project Title</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">PROJECT_TITLE_HERE</td>
+  </tr>
+  <tr style="background-color: #f2f2f2;">
+    <td style="border: 1px solid #ccc; padding: 8px; font-weight: bold;">Wayleave Type</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">WAYLEAVE_TYPE_HERE</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px; font-weight: bold;">District</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">DISTRICT_HERE</td>
+  </tr>
+  <tr style="background-color: #f2f2f2;">
+    <td style="border: 1px solid #ccc; padding: 8px; font-weight: bold;">Agency</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">AGENCY_HERE</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px; font-weight: bold;">JKR Required</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">JKR_HERE</td>
+  </tr>
+  <tr style="background-color: #f2f2f2;">
+    <td style="border: 1px solid #ccc; padding: 8px; font-weight: bold;">Approval Ref</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">APPROVAL_REF_HERE</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px; font-weight: bold;">Document</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">DOC_HERE</td>
+  </tr>
+</table>
+
+<p>Please review and take the necessary action.</p>
+<p>Thanks,<br>Wayleave Tracker (Automated)</p>
