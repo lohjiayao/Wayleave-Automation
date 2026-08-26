@@ -80,7 +80,7 @@ Three Excel Tables. The script finds them by inspecting headers, not by table na
 
 To add or remove an engineer, edit this table and the form's choice options. The flow needs no changes.
 
-### 3. Office Script — `scripts/WayleaveUpsert.ts`
+### 3. Office Script — `v2/scripts/WayleaveUpsert.ts`
 
 Lives in the workbook under **Automate**. Takes 12 parameters, returns a result object.
 
@@ -128,14 +128,14 @@ Every submission gets a log row regardless of outcome.
 
 ## Setup
 
-1. **Excel** — open the workbook → **Automate** → **New Script** → paste `scripts/WayleaveUpsert.ts` → name it `WayleaveUpsert` → Save.
+1. **Excel** — open the workbook → **Automate** → **New Script** → paste `v2/scripts/WayleaveUpsert.ts` → name it `WayleaveUpsert` → Save.
 2. **Verify tables** — three Excel Tables must exist with the headers described above. The engineer table's email column header must contain `Engineer Email`.
 3. **Power Automate** — build four actions:
    - When a new response is submitted (Forms)
    - Get response details (Forms)
    - Run script (Excel Online Business) → select the workbook and `WayleaveUpsert`, map the 12 parameters
    - Apply to each over `engineerEmails` → Send an email (V2), To = Current item
-4. **Email body** — paste `docs/email-template.html` via the code-view (`</>`) button, then replace each placeholder with the matching **Run script** output.
+4. **Email body** — paste `v2/docs/email-template.html` via the code-view (`</>`) button, then replace each placeholder with the matching **Run script** output.
 
 ---
 
@@ -176,9 +176,15 @@ The script strips this to the bare link. Use the script's `documentLink` output 
 ```
 .
 ├── README.md
-├── scripts/
-│   └── WayleaveUpsert.ts      Office Script — all Excel logic
-└── docs/
-    ├── email-template.html    notification email body
-    └── flow-reference.md      Power Automate parameter mapping
+├── v1/                         earlier version — see v1/CHANGELOG.md
+│   ├── CHANGELOG.md
+│   ├── POWER_AUTOMATE_SETUP.md
+│   ├── TROUBLESHOOTING.md
+│   └── WORKBOOK_STRUCTURE.md
+└── v2/                         current version, described above
+    ├── scripts/
+    │   └── WayleaveUpsert.ts   Office Script — all Excel logic
+    └── docs/
+        ├── email-template.html notification email body
+        └── flow-reference.md   Power Automate parameter mapping
 ```
